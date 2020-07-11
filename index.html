@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+   
+    <title>stopwatch</title>
+</head>
+<style>
+*{
+    padding: 0px;
+    margin: 0px;
+
+    }
+body{
+    height: 100vh;
+    background-image: url('1-gif-21.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+h1,h4{
+    display: inline-block;
+}
+
+#cir{
+    border: 6px double white;
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+}
+.bor{
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+</style>
+<body>
+
+    <div class="container-flex">
+
+    <div class="row no-gutters">
+        <div class="col-sm-12 col-md-12 col-lg-12 text-light text-center pt-3 pb-5"><h1 id="ab">STOP WATCH</h1>
+        </div>
+    </div>
+    <div class="row no-gutters mt-5 " id="txt">
+        <div class="col-sm-12 col-md-12 col-lg-12">
+            <center>
+            <div  class="text-light pt-5 " id="cir">
+                <h1 class="text-light mt-5" id="min">0</h1> :
+                <h1 class="text-light mt-5" id="sec">0</h1> :
+                <h1 class="text-light mt-5" id="msec">0</h1>
+                <br>
+                <h4 class="text-light">MIN_ </h4>
+                <h4 class="text-light">SEC_ </h4>
+                <h4 class="text-light">MSEC</h4>
+            </div>
+            <br>
+            <button class="btn text-light bor" id="start" onclick="start()">Start</button> &nbsp;
+            <button class="btn text-light bor" id="stop" onclick="stop()">Stop</button> &nbsp;
+            <button class="btn text-light bor" id="reset"  onclick="reset()">Reset</button>
+
+            </center>
+        </div>
+    </div>
+
+    </div>
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
